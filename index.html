@@ -1,12 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css    \main.css">
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Estoy es una prueba</h1>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
+    <section>
+        <div>
+        <form action="">
+            <fieldset>
+                <legend>Parte inicial</legend>
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" maxlength="20" placeholder="Escribe tu nombre" value="Julio César Cortés Echeverry" readonly>
+                </label> 
+                <br><br>
+                <label for="documento">Documento
+                    <input type="number" id="documento" maxlength="10" placeholder="Escribe tu documento" value="1053775667">
+                </label>
+                <br><br>
+                <label for="edad">Edad
+                    <input type="number" name="edad" id="edad" min="18" max="99" value="18" step="2">
+                </label> 
+                <br><br>
+                <label for="Pass">Contraseña
+                    <input type="password" name="Pass" id="Pass">
+                </label>
+                <br><br>  
+                <label for="rango">Rango
+                    <input type="range" name="rango" id="rango" min="1" max="5" value="1">
+                </label>
+                <br><br>
+                <label for="fecha">Fecha ingreso
+                    <input type="date" name="fecha" id="fecha" min="2019-08-29" max="2021-09-12" value="2021-09-12">
+                </label>  
+                <!--Colores-->
+                <br><br>
+                <label for="color">Seleccionar un Color
+                    <input type="color" name="color" id="color" value="#FF5733">
+                </label>
+                <!--Archivos-->
+                <br><br>
+                <label for="archivo">Seleccionar un archivo
+                    <input type="file" name="archivo" id="archivo" multiple>
+                </label> 
+                <!--Correo--> 
+                <br><br>
+                <label>Ingresa el Correo Electrónico
+                    <input type="email" name="email" id="email">
+                </label>    
+            </fieldset>
+            <input type="submit" value="Enviar_Form">
+            <input type="reset" value="Cancelar">
+        </form>
+        </div>
+    </section>
+    <div>
+        <fieldset>
+            <legend>Segunda Parte</legend>
+            <select name="Ciudad" id="Ciudad">
+                <option value="1">Medellín</option>
+                <option value="2">Bogotá</option>
+                <option value="3">Manizales</option>
+                <option value="4">Cali</option>
+            </select><br>
+            <label for="EC">Estado Civil <br>
+                <input type="radio" name="EC" id="ECc">
+                Casado <br>
+                <input type="radio" name="EC" id="ECs" checked>
+                Soltero <br>
+                <input type="radio" name="EC" id="ECd">
+                Divorsiado                
+            </label><br><br>
+            <label for="">HOBBIES<br> 
+                <input type="checkbox" name="hobbies" id="1">Dibujar
+            </label><br>
+            <label for="">
+                <input type="checkbox" name="hobbies" id="2">Cantar
+            </label><br>
+            <label for="">
+                <input type="checkbox" name="hobbies" id="3">Leer
+            </label><br>
+            <label for="">
+                <input type="checkbox" name="hobbies" id="4">Bailar
+            </label><br><br>
+            <textarea name="Observaciones" id="" cols="30" rows="10"></textarea><br><br>
+            <label for="C">Ciudad
+                <input type="text" name="Ciudad" id="C" list="CiudadC">
+                <datalist id="CiudadC">
+                    <option value="Medellin"></option>
+                    <option value="Bogotá"></option>
+                    <option value="Manizales"></option>
+                    <option value="Cali "></option>
+                </datalist>
+            </label> 
+        </fieldset>
+    </div>
 </body>
 </html>
